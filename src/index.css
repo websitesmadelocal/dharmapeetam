@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F2A44;
+  --color-accent: #C89B3C;
+  --color-lightBg: #F8F6F2;
+  --color-cardBg: #F5EFE6;
+  --color-textDark: #1C1C1C;
+  --color-textMuted: #6B7280;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+/* ✅ Custom Utility Classes */
+@layer utilities {
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+  .bg-lightBg {
+    background-color: var(--color-lightBg);
+  }
+  .bg-cardBg {
+    background-color: var(--color-cardBg);
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+  .text-accent {
+    color: var(--color-accent);
+  }
+  .text-muted {
+    color: var(--color-textMuted);
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-lightBg);
+    font-family: var(--font-body);
+    color: var(--color-textDark);
+  }
+}
