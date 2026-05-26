@@ -90,24 +90,21 @@ export default ContactSection;
 
 
 
-
-
+//HOme hero section previous version 
 const Hero = () => {
   return (
     <section className="relative w-full h-[70vh] sm:h-[75vh] md:h-[85vh] overflow-hidden">
 
       {/* Background Image */}
       <img
-        src="/assets/images/banners/banner-home.png"
+        // src="/assets/images/banners/banner-home.png"
+           src="/assets/images/banners/team-banner.png"
         alt="Hero"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 
-        bg-black/50 
-        md:bg-gradient-to-r md:from-transparent md:via-primary/70 md:to-primary">
-      </div>
+      
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto h-full flex items-center px-6">

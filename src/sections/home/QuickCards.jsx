@@ -3,10 +3,11 @@ import { CalendarDays, Users, Scale } from "lucide-react";
 
 const QuickCards = () => {
   const navigate = useNavigate();
+   const currentYear = new Date().getFullYear();
 
-  const cards = [
+   const cards = [
     {
-      title: "Current Events 2026",
+      title: `Current Events ${currentYear}`,
       desc: "Stay Updated with Our Latest Activities",
       button: "View Events",
       icon: CalendarDays,

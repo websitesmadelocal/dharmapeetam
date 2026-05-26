@@ -5,7 +5,8 @@ const Founder = () => {
 
         <div>
           <img
-            src="/assets/images/founder.png"
+            // src="/assets/images/founder.png"
+             src="/assets/images/chandra-sekhar.jpg"
             alt="Founder"
             className="rounded-xl"
           />
