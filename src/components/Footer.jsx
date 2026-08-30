@@ -30,6 +30,9 @@ const Footer = () => {
               <Link to="/courses">Courses</Link>
             </li>
             <li>
+              <Link to="/evaw">Elimination Of Violence Against Women </Link>
+            </li>
+            <li>
               <Link to="/programs">Programs</Link>
             </li>
             <li>
@@ -54,23 +57,75 @@ const Footer = () => {
         <div>
           <h3 className="font-heading text-lg mb-4">Contact</h3>
 
-          <div className="space-y-3 text-sm text-gray-300">
+          <div className="space-y-6 text-sm text-gray-300">
+            {/* Bengaluru Office */}
             <div className="flex items-start gap-2">
-              <MapPin size={16} className="mt-1" />
-              <p>
-                Flat No. 4, PVC Nilayam,
-                <br />
-                2nd Line JKC Nagar,
-                <br />
-                Guntur - 522006
-              </p>
+              <MapPin size={16} className="mt-1 shrink-0" />
+              <div>
+                <p className="font-semibold text-white mb-1">
+                  Bengaluru Office
+                </p>
+                <p>
+                  #232, Rajaswi Building,
+                  <br />
+                  8th Cross, Winn Field Garden,
+                  <br />
+                  MCECHS Layout,
+                  <br />
+                  Bengaluru - 560077
+                </p>
+              </div>
             </div>
 
+            {/* Hyderabad Office */}
+            <div className="flex items-start gap-2">
+              <MapPin size={16} className="mt-1 shrink-0" />
+              <div>
+                <p className="font-semibold text-white mb-1">
+                  Hyderabad Office
+                </p>
+                <p>
+                  5-5-35/162/F5,
+                  <br />
+                  Flat No. 5, 1st Floor,
+                  <br />
+                  Soni Business Complex,
+                  <br />
+                  Kukatpally Y Junction,
+                  <br />
+                  Telangana - 500072
+                </p>
+              </div>
+            </div>
+
+            {/* Guntur Office */}
+            <div className="flex items-start gap-2">
+              <MapPin size={16} className="mt-1 shrink-0" />
+              <div>
+                <p className="font-semibold text-white mb-1">Guntur Office</p>
+                <p>
+                  Dr. No: 20-5-461,
+                  <br />
+                  Muthayalareddy Nagar, 7th Line,
+                  <br />
+                  Ward No. 4,
+                  <br />
+                  Amaravathi Road,
+                  <br />
+                  Guntur,
+                  <br />
+                  Andhra Pradesh - 522002, India
+                </p>
+              </div>
+            </div>
+
+            {/* Phone */}
             <div className="flex items-center gap-2">
               <Phone size={16} />
               <p>94406 32117</p>
             </div>
 
+            {/* Email */}
             <div className="flex items-center gap-2">
               <Mail size={16} />
               <p>dharmapeetam4all@gmail.com</p>
@@ -83,13 +138,27 @@ const Footer = () => {
           <h3 className="font-heading text-lg mb-4">Follow Us</h3>
 
           <div className="flex gap-4 text-sm text-gray-300 mb-4">
-            <a href="https://youtube.com/@dharmapetam" target="_blank">
+            <a
+              href="https://youtube.com/@dharmapetam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               YouTube
             </a>
-            <a href="https://instagram.com/dharmapeetam_" target="_blank">
+
+            <a
+              href="https://instagram.com/dharmapeetam_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Instagram
             </a>
-            <a href="https://facebook.com" target="_blank">
+
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Facebook
             </a>
           </div>

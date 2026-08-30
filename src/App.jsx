@@ -9,6 +9,7 @@ import Team from "./pages/Team";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Events from "./pages/Events";
+import EVAW from "./pages/Evaw";
 
 //details
 import CourseDetail from "./pages/CourseDetail";
@@ -34,6 +35,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/evaw" element={<EVAW />} />
 
              {/* Legal Pages */}
         <Route path="/privacy" element={<PrivacyPolicy />} />
