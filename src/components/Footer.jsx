@@ -5,9 +5,12 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white pt-16 pb-6">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+
         {/* Column 1 - About */}
         <div>
-          <h2 className="font-heading text-xl mb-4">Dharmapeetam</h2>
+          <h2 className="font-heading text-xl mb-4">
+            Dharmapeetam
+          </h2>
 
           <p className="text-sm text-gray-300 leading-relaxed">
             Providing free legal aid, awareness, and educational support to
@@ -17,73 +20,103 @@ const Footer = () => {
 
         {/* Column 2 - Quick Links */}
         <div>
-          <h3 className="font-heading text-lg mb-4">Quick Links</h3>
+          <h3 className="font-heading text-lg mb-4">
+            Quick Links
+          </h3>
 
           <ul className="space-y-2 text-sm text-gray-300">
             <li>
               <Link to="/">Home</Link>
             </li>
+
             <li>
               <Link to="/about">About</Link>
             </li>
+
             <li>
               <Link to="/courses">Courses</Link>
             </li>
+
             <li>
-              <Link to="/evaw">Elimination Of Violence Against Women </Link>
+              <Link to="/evaw">
+                Elimination Of Violence Against Women
+              </Link>
             </li>
+
             <li>
               <Link to="/programs">Programs</Link>
             </li>
+
             <li>
               <Link to="/team">Our Team</Link>
             </li>
+
             <li>
               <Link to="/gallery">Gallery</Link>
             </li>
+
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+
             <li>
               <Link to="/privacy">Privacy Policy</Link>
             </li>
+
             <li>
-              <Link to="/terms">Terms & Conditions</Link>
+              <Link to="/terms">
+                Terms & Conditions
+              </Link>
             </li>
           </ul>
         </div>
 
         {/* Column 3 - Contact */}
         <div>
-          <h3 className="font-heading text-lg mb-4">Contact</h3>
+          <h3 className="font-heading text-lg mb-4">
+            Contact
+          </h3>
 
           <div className="space-y-6 text-sm text-gray-300">
-            {/* Bengaluru Office */}
+
+            {/* Guntur Office */}
             <div className="flex items-start gap-2">
-              <MapPin size={16} className="mt-1 shrink-0" />
+              <MapPin
+                size={16}
+                className="mt-1 shrink-0"
+              />
+
               <div>
                 <p className="font-semibold text-white mb-1">
-                  Bengaluru Office
+                  Guntur Office
                 </p>
+
                 <p>
-                  #232, Rajaswi Building,
+                  24-11-490, 0 Line,
                   <br />
-                  8th Cross, Winn Field Garden,
+                  Dhanavathulavariveedi,
                   <br />
-                  MCECHS Layout,
+                  Chandramouli Nagar,
                   <br />
-                  Bengaluru - 560077
+                  Guntur - 522007,
+                  <br />
+                  Andhra Pradesh.
                 </p>
               </div>
             </div>
 
             {/* Hyderabad Office */}
             <div className="flex items-start gap-2">
-              <MapPin size={16} className="mt-1 shrink-0" />
+              <MapPin
+                size={16}
+                className="mt-1 shrink-0"
+              />
+
               <div>
                 <p className="font-semibold text-white mb-1">
                   Hyderabad Office
                 </p>
+
                 <p>
                   5-5-35/162/F5,
                   <br />
@@ -98,23 +131,26 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Guntur Office */}
+            {/* Bengaluru Office */}
             <div className="flex items-start gap-2">
-              <MapPin size={16} className="mt-1 shrink-0" />
+              <MapPin
+                size={16}
+                className="mt-1 shrink-0"
+              />
+
               <div>
-                <p className="font-semibold text-white mb-1">Guntur Office</p>
+                <p className="font-semibold text-white mb-1">
+                  Bengaluru Office
+                </p>
+
                 <p>
-                  Dr. No: 20-5-461,
+                  #232, Rajaswi Building,
                   <br />
-                  Muthayalareddy Nagar, 7th Line,
+                  8th Cross, Winn Field Garden,
                   <br />
-                  Ward No. 4,
+                  MCECHS Layout,
                   <br />
-                  Amaravathi Road,
-                  <br />
-                  Guntur,
-                  <br />
-                  Andhra Pradesh - 522002, India
+                  Bengaluru - 560077
                 </p>
               </div>
             </div>
@@ -122,22 +158,32 @@ const Footer = () => {
             {/* Phone */}
             <div className="flex items-center gap-2">
               <Phone size={16} />
-              <p>94406 32117</p>
+
+              <p>
+                94406 32117
+              </p>
             </div>
 
             {/* Email */}
             <div className="flex items-center gap-2">
               <Mail size={16} />
-              <p>dharmapeetam4all@gmail.com</p>
+
+              <p>
+                dharmapeetam4all@gmail.com
+              </p>
             </div>
+
           </div>
         </div>
 
         {/* Column 4 - Social */}
         <div>
-          <h3 className="font-heading text-lg mb-4">Follow Us</h3>
+          <h3 className="font-heading text-lg mb-4">
+            Follow Us
+          </h3>
 
           <div className="flex gap-4 text-sm text-gray-300 mb-4">
+
             <a
               href="https://youtube.com/@dharmapetam"
               target="_blank"
@@ -161,12 +207,14 @@ const Footer = () => {
             >
               Facebook
             </a>
+
           </div>
 
           <p className="text-sm text-gray-400">
             Stay connected for updates and events.
           </p>
         </div>
+
       </div>
 
       {/* Bottom Bar */}

@@ -14,31 +14,32 @@ const competitions = [
     title: "Article Writing",
     description:
       "Showcase your legal research and writing skills by presenting original ideas on the event theme.",
+    deadline: "30 September 2026",
   },
   {
     icon: <MessageSquare size={32} />,
     title: "Debate",
     description:
       "Compete in a structured debate that develops advocacy, reasoning, and persuasive communication.",
+    deadline: "2 October 2026",
   },
   {
     icon: <Scale size={32} />,
     title: "Moot Court",
     description:
       "Experience courtroom advocacy through simulated legal proceedings before a panel.",
+    deadline: "15 October 2026",
   },
 ];
 
 const EventInfo = () => {
   return (
     <section className="py-20 bg-lightBg">
-
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
 
         <div className="text-center mb-14">
-
           <p className="text-accent uppercase tracking-[0.25em] mb-3">
             Event Overview
           </p>
@@ -49,11 +50,12 @@ const EventInfo = () => {
 
           <p className="max-w-3xl mx-auto text-textMuted leading-8">
             Dharmapeetam proudly presents the
-            <strong> Elimination of Violence Against Women (EVAW)</strong>
+            <strong>
+              {" "}Elimination of Violence Against Women (EVAW)
+            </strong>{" "}
             competitions to encourage legal awareness, advocacy, research,
             and leadership among students.
           </p>
-
         </div>
 
         {/* Event Highlights */}
@@ -62,26 +64,50 @@ const EventInfo = () => {
 
           <div className="bg-white rounded-xl shadow p-6 text-center">
             <Calendar className="mx-auto text-accent mb-3" />
-            <h3 className="font-semibold text-primary">Date</h3>
-            <p className="text-textMuted">25 November 2026</p>
+
+            <h3 className="font-semibold text-primary">
+             Prize Distribution Date
+            </h3>
+
+            <p className="text-textMuted">
+              25 November 2026
+            </p>
           </div>
 
           <div className="bg-white rounded-xl shadow p-6 text-center">
             <Clock className="mx-auto text-accent mb-3" />
-            <h3 className="font-semibold text-primary">Time</h3>
-            <p className="text-textMuted">09:00 AM</p>
+
+            <h3 className="font-semibold text-primary">
+              Time
+            </h3>
+
+            <p className="text-textMuted">
+              09:00 AM
+            </p>
           </div>
 
           <div className="bg-white rounded-xl shadow p-6 text-center">
             <MapPin className="mx-auto text-accent mb-3" />
-            <h3 className="font-semibold text-primary">Venue</h3>
-            <p className="text-textMuted">To be Announced</p>
+
+            <h3 className="font-semibold text-primary">
+              Venue
+            </h3>
+
+            <p className="text-textMuted">
+              To be Announced
+            </p>
           </div>
 
           <div className="bg-white rounded-xl shadow p-6 text-center">
             <Users className="mx-auto text-accent mb-3" />
-            <h3 className="font-semibold text-primary">Eligibility</h3>
-            <p className="text-textMuted">Law Students</p>
+
+            <h3 className="font-semibold text-primary">
+              Eligibility
+            </h3>
+
+            <p className="text-textMuted">
+              Law Students
+            </p>
           </div>
 
         </div>
@@ -104,9 +130,21 @@ const EventInfo = () => {
                 {item.title}
               </h3>
 
-              <p className="text-textMuted leading-7">
+              <p className="text-textMuted leading-7 mb-5">
                 {item.description}
               </p>
+
+              {/* Registration Deadline */}
+
+              <div className="border-t pt-4">
+                <p className="text-sm text-textMuted">
+                  Registration closes
+                </p>
+
+                <p className="font-semibold text-accent">
+                  {item.deadline}
+                </p>
+              </div>
 
             </div>
           ))}
@@ -114,7 +152,6 @@ const EventInfo = () => {
         </div>
 
       </div>
-
     </section>
   );
 };

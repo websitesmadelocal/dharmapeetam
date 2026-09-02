@@ -95,7 +95,8 @@ const RegistrationForm = () => {
   };
 
   const totalAmount = calculateTotalAmount();
-    // --------------------------------
+
+  // --------------------------------
   // COMPETITION CHECKBOX
   // --------------------------------
 
@@ -177,7 +178,8 @@ const RegistrationForm = () => {
         : [""]
     );
   };
-    // --------------------------------
+
+  // --------------------------------
   // SUBMIT
   // --------------------------------
 
@@ -308,7 +310,8 @@ const RegistrationForm = () => {
       setLoading(false);
     }
   };
-    return (
+
+  return (
     <section
       id="registration"
       className="py-20 bg-white"
@@ -407,7 +410,8 @@ const RegistrationForm = () => {
             </div>
 
           </div>
-                    {/* COMPETITION SELECTION */}
+
+          {/* COMPETITION SELECTION */}
 
           <div>
 
@@ -450,6 +454,10 @@ const RegistrationForm = () => {
                   ₹300
                 </span>
 
+                <p className="text-xs text-textMuted mt-3">
+                  Last date: September 30, 2026
+                </p>
+
               </label>
 
               {/* DEBATE */}
@@ -484,6 +492,10 @@ const RegistrationForm = () => {
                 <span className="float-right text-accent font-bold">
                   ₹500
                 </span>
+
+                <p className="text-xs text-textMuted mt-3">
+                  Last date: October 2, 2026
+                </p>
 
               </label>
 
@@ -520,6 +532,10 @@ const RegistrationForm = () => {
                   ₹1000 / Team
                 </span>
 
+                <p className="text-xs text-textMuted mt-3">
+                  Last date: October 15, 2026
+                </p>
+
               </label>
 
             </div>
@@ -543,7 +559,8 @@ const RegistrationForm = () => {
               )}
 
           </div>
-                    {/* MOOT COURT TEAM */}
+
+          {/* MOOT COURT TEAM */}
 
           {selectedPrograms.includes(
             "Moot Court"
@@ -628,7 +645,8 @@ const RegistrationForm = () => {
             </div>
 
           )}
-                    {/* REGISTRATION SUMMARY */}
+
+          {/* REGISTRATION SUMMARY */}
 
           <div className="bg-lightBg rounded-xl border p-6">
 
@@ -741,7 +759,8 @@ const RegistrationForm = () => {
             className="border rounded-lg p-4 w-full"
             required
           />
-                    {/* PAYMENT NOTE */}
+
+          {/* PAYMENT NOTE */}
 
           <div className="flex items-start gap-3 mt-5 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
 

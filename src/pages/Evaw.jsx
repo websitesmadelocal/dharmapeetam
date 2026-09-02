@@ -8,8 +8,8 @@ const EVAW = () => {
     <>
       <Banner />
       <EventInfo />
-      <RegistrationForm />
       <PaymentSection />
+      <RegistrationForm />
     </>
   );
 };
