@@ -163,21 +163,7 @@ const Banner = () => {
                 Organised by Dharmapeetam
               </p>
 
-              {/* DATE */}
-              <p
-                className="
-                  mt-1
-                  text-base
-                  font-semibold
-                  text-accent
-                  sm:mt-2
-                  sm:text-lg
-                  md:text-xl
-                "
-              >
-                25 November 2026
-              </p>
-
+            
               {/* DESCRIPTION */}
               <p
                 className="
